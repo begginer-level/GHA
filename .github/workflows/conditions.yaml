@@ -1,4 +1,4 @@
-name: Main branch workflow
+name: conditions
 on: [push]
 jobs:
  conditions:
