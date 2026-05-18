@@ -1,0 +1,13 @@
+name: concurrency
+on: [push]
+concurrency:
+ group: ${{ github.workflow }}-${{ github.ref }}
+ cancel-in-progress: true #exxisting will be cancelled and latest will run
+    #this workflow should be triggered for any branch only once
+jobs:
+ concurrency:
+  runs-on: ubuntu-latest
+  steps:
+   - name: executes tests
+     run:  sleep 20
+    
