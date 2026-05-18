@@ -1,4 +1,4 @@
-name: Addition Workflow
+name: inputs
 
 on:
   workflow_dispatch:
