@@ -1,4 +1,4 @@
-name: hello world
+name: first push
 on: [push]
 jobs:
  hello:
