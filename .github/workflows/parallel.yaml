@@ -1,0 +1,19 @@
+name: parallel
+on: [push]
+jobs:
+ job-1:
+  runs-on: ubuntu-latest
+  steps:
+   - name: step1
+     run: echo "Iam from job-1"
+ job-2:
+  runs-on: ubuntu-latest
+  steps:       
+   - name: step2
+     run: echo "Iam from job-2"
+ job-3:
+  runs-on: ubuntu-latest
+  steps:       
+   - name: step3
+     run: echo "Iam from job-3"
+           
