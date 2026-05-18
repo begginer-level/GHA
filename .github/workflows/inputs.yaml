@@ -1,0 +1,19 @@
+name: Addition Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      number:
+        description: "Enter a number"
+        required: true
+        default: "10"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Number
+        run: echo "Number is ${{ github.event.inputs.number }}"
+
+
