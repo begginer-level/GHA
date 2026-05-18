@@ -1,0 +1,12 @@
+name: Main branch workflow
+on: [push]
+jobs:
+ conditions:
+  runs-on: ubuntu-latest
+  steps:
+   - name: executes tests
+     if: github.ref == 'refs/heads/feature-**'
+     run: echo "hello world"
+   - name: step2
+     if: github.ref == 'refs/heads/main'
+     run: echo "hello github actions"  
